@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Source+Sans+Pro&display=swap');
+:root{
+    --borderr:rgba(255,255,255, 0.1);
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    background: url('/images/architecture-140785_1920.jpg');
+    height:100vh;
+    width:100vw;
+    align-items: center;
+    background-size: cover;
+    position:absolute;
+    
+}
+
+.container{
+    text-align: center;
+    background:rgba(0, 0, 0, 0.3);
+    position: relative;
+    width:80vw;
+    padding:3%;
+    margin:auto;
+    border-radius:20px;
+    backdrop-filter: blur(9px) brightness(1.5);
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#date{
+    position: relative;
+    color:rgb(41, 39, 39);
+    font-family:'Source Sans Pro';
+    margin:0 0;    
+}
+
+.theTime{
+    font-family:'Noto Sans', sans-serif;
+    color:black;
+    margin:2% auto;
+    position: relative;
+}
+
+#time{
+    font-size: 1.9rem;
+    font-family:'Source Sans Pro';
+    border: 3px solid var(--borderr);
+    border-radius: 2ch;
+    max-width:60%;
+    padding:2% 0;
+    margin:auto;    
+    color:rgba(255,255,255, 0.61);
+    position: relative;
+    transition: 0.51s ease-in-out;
+    background-color: inherit;
+}
+
+#time:hover{
+    color:rgba(255,255,255, 1);
+    background-color:var(--borderr);
+}
+
+/**************************************************************************/
+#quote-container{
+    padding:10px;
+    z-index:999;
+}
+
+#new-quote,#copy-quote{
+    color:rgba(255,255,255, 0.61);
+    font-size:1rem;
+    margin-top:1rem;
+    padding:1%;
+    border:2px solid var(--borderr);
+    border-radius: 10px;
+    background-color: inherit;
+}
+
+#new-quote:hover,#copy-quote:hover{
+    color:rgba(255,255,255, 1);
+    background-color:var(--borderr);
+}
+
+#text,#new-quote,#copy-quote{
+    font-family: 'Noto Sans',sans-serif;
+    transition: 0.51s ease-in-out;
+}
+
+#text{
+    font-size: 1.2em;
+    text-shadow: 1px 1px 1px 1px white;
+}
+
+#author{
+    font-family: 'Source Sans Pro',sans-serif;
+}
