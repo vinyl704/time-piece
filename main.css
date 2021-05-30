@@ -11,7 +11,7 @@
 .main{
     display: flex;
     flex-direction: column;
-    background: url('/images/architecture-140785_1920.jpg');
+    background: url('./images/architecture-140785_1920.jpg');
     height:100vh;
     width:100vw;
     align-items: center;
